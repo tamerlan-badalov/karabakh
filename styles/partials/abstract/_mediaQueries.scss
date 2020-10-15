@@ -1,0 +1,218 @@
+@media (max-width: 1197px) {
+    .news--rightSide {
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        margin-top: 50px;
+        // .side-news {
+        //     width: 50%;
+        // }
+        .social-buttons {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+    }
+    .news--leftSide {
+        .news__img{
+            height: 65vh;
+            img{
+                height:100%;
+            }
+        }
+    }
+    .main-events {
+        margin-bottom: 50px;
+        &__column {
+            display: flex;
+            align-items: center;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__scroll {
+            display: inline-flex;
+            align-items: center;
+            overflow: auto;
+            white-space: nowrap;
+            margin: 0 1.5rem;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 20px;
+                }
+            }
+        }
+        &__title {
+            margin: 0 !important;
+            h5 {
+                font-family: "Montserrat-Bold";
+                font-size: 21px;
+                font-weight: 600;
+                text-overflow: ellipsis;
+                // max-width: 300px;
+            }
+        }
+        a {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+    }
+
+    .lg-social {
+        .up-footer__social {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+    .input-group-append {
+        button {
+            border: none !important;
+        }
+    }
+
+    div::-webkit-scrollbar {
+        width: 2px !important;
+        height: 3px;
+    }
+
+    /* Track */
+    div::-webkit-scrollbar-track:horizontal {
+        box-shadow: inset 0 0 5px $outColor !important ;
+        border-radius: 10px !important;
+        width: 2px !important;
+    }
+
+    /* Handle */
+    div ::-webkit-scrollbar-thumb {
+        // background: #516dff !important;
+        border-radius: 5px !important;
+        width: 2px !important;
+    }
+    .slick-prev {
+        display: none;
+    }
+    .slick-dots {
+        margin-top: 20px !important;
+        li.slick-active button:before {
+            color: $ActiveBlue !important;
+        }
+    }
+    .section-eventSlider__wrapper {
+        .slick-dots li button:before {
+            color: #cccc !important;
+        }
+    }
+    .slick-dots li button:before {
+        color: #ffff !important;
+    }
+    .slider-element {
+        &__img {
+            height: 250px !important;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: fill;
+            }
+        }
+    }
+    .slider-element {
+        &__title {
+            // top: 30% !important;
+            width: 28rem;
+            h3 {
+                font-size: 31px !important;
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media(max-width:1002px){
+    .section-eventSlider{
+        .slick-dots{
+            bottom: -50px !important;
+    
+        }
+    }
+    
+};
+@media (max-width: 991px) {
+    .slider-element {
+        &__img {
+            height: 400px !important;
+            img {
+                height: 100%;
+            }
+        }
+        &__title {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50% !important;
+            width: 36rem;
+            display: flex;
+            align-items: center;
+            h3 {
+                font-size: 40px !important;
+                max-width: 100%;
+            }
+        }
+        .slick-dots {
+            right: 0 !important;
+        }
+    }
+}
+@media(max-width: 767px){
+    .news--leftSide {
+        .news__img{
+            height: 50vh;
+            img{
+                height:100%;
+            }
+        }
+    }
+    .lg-social {
+        .up-footer__social {
+            margin: 0;
+            display: flex;
+            flex-direction: row !important;
+            align-items: center !important;
+            text-align: left;
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    margin: 10px 15px;
+                }
+            }
+        }
+    }
+    .news__title{
+        margin-top: 15px;
+        h5 {
+            font-family: 'Montserrat-Bold';
+            font-size: 16px;
+            font-weight: 700;
+        }
+        p {
+            font-family: 'Montserrat-Regular';
+            font-size: 12px;
+            font-weight: 500;
+            color:$black;
+        }
+        span {
+            display: block;
+            margin-top: 13px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+}
